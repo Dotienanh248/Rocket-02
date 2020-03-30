@@ -1,0 +1,129 @@
+//
+package utils;
+
+import java.util.Scanner;
+
+/**
+ * This class is enter input from User. 
+ * 
+ * @Description: .
+ * @author: DoTienAnh
+ * @create_date: Mar 30, 2020
+ * @version: 1.0
+ * @modifer: DoTienAnh
+ * @modifer_date: Mar 30, 2020
+ */
+public class ScannerUtil {
+	
+	/**
+	 * This method is enter input Integer.
+	 * 
+	 * @Description: .
+	 * @author: DoTienAnh
+	 * @create_date: Mar 30, 2020
+	 * @version: 1.0
+	 * @modifer: DoTienAnh
+	 * @modifer_date: Mar 30, 2020	
+	 * @param scanner      - use Scanner to enter
+	 * @param errorMessage - Error Message
+	 * @return int - it is a number from user input
+	 */
+	public static int readInt(Scanner scanner, String errorMessage) {
+		while (true) {
+			try {
+				return Integer.parseInt(scanner.nextLine());
+			} catch (Exception e) {
+				showError(errorMessage);
+			}
+		}
+	}
+
+	/**
+	 * This method is enter input float.
+	 * 
+	 * @Description: .
+	 * @author: DoTienAnh
+	 * @create_date: Mar 30, 2020
+	 * @version: 1.0
+	 * @modifer: DoTienAnh
+	 * @modifer_date: Mar 30, 2020
+	 * @param scanner      - use Scanner to enter
+	 * @param errorMessage - Error Message
+	 * @return double - it is a number from user input
+	 */
+	public static double readDouble(Scanner scanner, String errorMessage) {
+		while (true) {
+			try {
+				return Double.parseDouble(scanner.nextLine());
+			} catch (Exception e) {
+				showError(errorMessage);
+			}
+		}
+	}
+
+	/**
+	 * This method is enter input float.
+	 * 
+	 * @Description: .
+	 * @author: DoTienAnh
+	 * @create_date: Mar 30, 2020
+	 * @version: 1.0
+	 * @modifer: DoTienAnh
+	 * @modifer_date: Mar 30, 2020
+	 * @param scanner      - use Scanner to enter
+	 * @param errorMessage - Error Message
+	 * @return float - it is a number from user input
+	 */
+	public static float readFloat(Scanner scanner, String errorMessage) {
+		while (true) {
+			try {
+				return Float.parseFloat(scanner.nextLine());
+			} catch (Exception e) {
+				showError(errorMessage);
+			}
+		}
+	}
+
+	/**
+	 * This method is enter input String.
+	 * 
+	 * @Description: .
+	 * @author: DoTienAnh
+	 * @create_date: Mar 30, 2020
+	 * @version: 1.0
+	 * @modifer: DoTienAnh
+	 * @modifer_date: Mar 30, 2020
+	 * @param scanner      - use Scanner to enter
+	 * @param errorMessage - Error Message
+	 * @return String - it is a number from user input
+	 */
+	public static String readString(Scanner scanner, String errorMessage) {
+		while (true) {
+			try {
+				String result = scanner.nextLine().trim();
+				if (result != null & !result.isEmpty()) {
+					return result;
+				}
+			} catch (Exception e) {
+				showError(errorMessage);
+			}
+		}
+	}
+
+	/**
+	 * This method show error message when validating.
+	 * 
+	 * @Description: .
+	 * @author: DoTienAnh
+	 * @create_date: Mar 30, 2020
+	 * @version: 1.0
+	 * @modifer: DoTienAnh
+	 * @modifer_date: Mar 30, 2020
+	 * @param message - Error message
+	 */
+	private static void showError(String message) {
+		System.out.println("Error: " + message);
+	}
+
+
+}
