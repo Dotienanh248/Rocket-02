@@ -107,7 +107,7 @@ public class Function {
 	 * This method is show status of bees .
 	 *
 	 * @Description: .
-	 * @author: HuongLT
+	 * @author: DoTienAnh
 	 * @create_date: Mar 28, 2020
 	 * @version: 1.0
 	 * @modifer: DoTienAnh
