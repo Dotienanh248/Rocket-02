@@ -1,0 +1,203 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500&family=Montserrat:wght@600&display=swap');
+
+/* Header styles */
+header a {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.75s;
+}
+
+header button.navbar-toggler:focus {
+    outline: none;
+}
+
+#nav-toggle {
+    font-size: 30px;
+    color: #00AEE0;
+}
+
+header ul {
+    list-style-type: none !important;
+}
+
+header a.active {
+    color: #00AEE0;
+}
+
+header a:hover {
+    color: #00AEE0;
+}
+
+header img {
+    width: 50%;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+    padding: 0;
+}
+
+#contentBanner {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#imgBanner {
+    min-height: 200px;
+    background-image: url("../../pics/testimonials.jpg");
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: 0;
+}
+
+/* Educate */
+#educate .nav {
+    border: none;
+}
+
+#educate .nav:hover {
+    border: none;
+}
+
+#educate a {
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+#educate a.active {
+    background-color: transparent;
+    border-bottom: 2px solid #00AEE0;
+}
+
+#educate {
+    text-align: center;
+}
+
+#educate .card {
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    transition: all 0.5s ease-out;
+}
+
+#educate .card:hover {
+    box-shadow: 0px 3px 17px 9px rgba(138, 138, 138, 0.69);
+}
+
+#educate .btn-primary:focus {
+    box-shadow: none;
+}
+
+#card_1 {
+    border-top: 3px solid #60CB71;
+    border-bottom: 3px solid #60CB71;
+}
+
+#card_1 .btn-primary {
+    border: 2px solid #60CB71;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#60CB71 100%, transparent 0%);
+    background-position: -161px, 0px;
+    transition: background-position 0.25s ease-out, color 0.5s ease-out;
+}
+
+#card_2 {
+    border-top: 3px solid #5F5DAC;
+    border-bottom: 3px solid #5F5DAC;
+}
+
+#card_2 .btn-primary {
+    border: 2px solid #5F5DAC;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#5F5DAC 100%, transparent 0%);
+    background-position: -161px, 0px;
+    transition: background-position 0.25s ease-out, color 0.5s ease-out;
+}
+
+#card_3 {
+    border-top: 3px solid #ffa41b;
+    border-bottom: 3px solid #ffa41b;
+}
+
+#card_3 .btn-primary {
+    border: 2px solid #ffa41b;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#ffa41b 100%, transparent 0%);
+    background-position: -161px, 0px;
+    transition: background-position 0.25s ease-out, color 0.5s ease-out;
+}
+
+#card_4 {
+    border-top: 3px solid #c70039;
+    border-bottom: 3px solid #c70039;
+}
+
+#card_4 .btn-primary {
+    border: 2px solid #c70039;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#c70039 100%, transparent 0%);
+    background-position: -161px, 0px;
+    transition: background-position 0.25s ease-out, color 0.5s ease-out;
+}
+
+#card_1 .btn-primary:hover,
+#card_2 .btn-primary:hover,
+#card_3 .btn-primary:hover,
+#card_4 .btn-primary:hover {
+    color: white;
+    background-position: 0px, 0px;
+}
+
+#educate li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #6e7da2;
+    font-family: K2D, sans-serif;
+    font-size: 15px;
+    color: #fcf8f3;
+}
+
+footer h5 {
+    font-weight: 500;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    color: #fcf8f3;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+#facebook {
+    width: 4%;
+}
+
+#ins {
+    width: 7%;
+}

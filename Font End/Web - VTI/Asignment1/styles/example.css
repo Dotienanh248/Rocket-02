@@ -1,0 +1,68 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500&family=Montserrat:wght@600&display=swap');
+
+/* Header styles */
+header a {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.75s;
+}
+
+header button.navbar-toggler:focus {
+    outline: none;
+}
+
+#nav-toggle {
+    font-size: 30px;
+    color: #00AEE0;
+}
+
+header ul {
+    list-style-type: none !important;
+}
+
+header a.active {
+    color: #00AEE0;
+}
+
+header a:hover {
+    color: #00AEE0;
+}
+
+header img {
+    width: 50%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #6e7da2;
+    font-family: K2D, sans-serif;
+    font-size: 15px;
+    color: #fcf8f3;
+}
+
+footer h5 {
+    font-weight: 500;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    color: #fcf8f3;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+#facebook {
+    width: 4%;
+}
+
+#ins {
+    width: 7%;
+}
